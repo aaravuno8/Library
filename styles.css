@@ -1,8 +1,6 @@
 .content-center {
   text-align: center;
   align-items: center;
-  align-self: center;
-  align-content: center;
 }
 
 .carousel-item {
@@ -15,18 +13,9 @@
     display: initial;
   }
 
-  #content-card-1-laptop {
-    display: flexbox;
-    flex-wrap: wrap;
-  }
-
-  #content-card-1-mobile {
-    display: none;
-  }
-
   #sheets-frame {
     height: 500px;
-    width: 900px;
+    width: 650px;
     border: 5px solid black;
     margin: 10px;
   }
@@ -55,18 +44,9 @@
     display: none;
   }
 
-  #content-card-1-laptop {
-    display: none;
-  }
-
-  #content-card-1-mobile {
-    display: flexbox;
-    flex-wrap: wrap;
-  }
-
   #sheets-frame {
     height: 800px;
-    width: 400px;
+    width: 300px;
     border: 5px solid black;
     margin: 10px;
   }
@@ -91,20 +71,9 @@
     margin: 50px;
   }
 }
-#carouselExampleDark {
-  text-align: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-}
 #carouselExampleDark img {
   width: 1100px;
   height: auto;
-  text-align: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  vertical-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
