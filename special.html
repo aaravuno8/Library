@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Library @CM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+  <div id="maincontent">
+    <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><strong>Aarav Library @CM</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 sticky-left">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="booklist();" href="#booklist">Browse Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="rental();" href="#rental">Check My Rental</a>
+              </li>
+      </div>
+    </div>
+  </nav>
+  <div class="rounded content-center mt-4 mb-0" style="margin-top: 500px;" id="contact" data-aos="slide-up">
+    <strong>Contact/Paytm Numbers  : </strong>
+    8080468185, 8452028477
+  </div>
+  <!-- Rent Info -->
+  <table style="margin-top: 10px;">
+    <tr>
+        <td style="margin: 0px;">
+            <img src="book.png" alt="bookshelf">
+        </td>
+        <td>
+            <div class="card m-0" id="info" >
+                <div class="card-body" style="word-wrap:break-word; width: inherit; text-align:start;" data-aos="zoom-in">
+                <p style="text-align:start;">Hi, I am Aarav and I love to read. 
+                    I have lots of books which I have already read and I wanted to do something with them.
+                    So, I came up with the idea of starting a Library for my society.</p>
+                <p style="text-align:start;"> This is how "Aarav Library @CM" started!</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    </table>
+  
+  <!-- Books -->
+  <div class="rounded content-center" id="contact" style="word-wrap:break-word;width: 700px;">
+    New Customers: Check out some of our Book Collection &nbsp; <a onclick="booklist();" href="#booklist"> here</a> 
+  </div>
+  <div class="rounded content-center" id="contact" style="word-wrap:break-word;width: 700px;margin-bottom:470px ;">
+    Existing Customers: Check your rented books and their due dates &nbsp; <a onclick="rental();" href="#rental">here</a>
+  </div>
+  <div id="actualbooklist">
+    <div style="height: 470px;">
+    </div>
+    <div style="width:10px;height: 30px;" id="booklist">
+    </div>
+    <div data-aos="zoom-in-up">
+      <div class="content-center m-1">
+        <div class="btn btn-primary ">
+          Book List
+        </div>
+      </div>
+      <div class="m-4 content-center">
+          <iframe id="sheets-frame-avail" class="rounded" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRsLHWhFTDRlH77hZPpzQkiuH3P7QaEcsvemggBrrYajdlVR8fV2K_vD46MFWX0t5gEV_-0KjXhAwzA/pubhtml"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="actualrental">
+    <div style="height: 470px;"></div>
+    <div style="width:10px;height: 30px;" id="rental">
+      </div>
+      <div data-aos="zoom-in-up">
+          <div class="content-center m-1">
+              <div class="btn btn-primary ">
+                  My Rentals
+              </div>
+          </div>
+          <div class="m-4 content-center">
+            <iframe id="sheets-frame-avail" style="height:500px" class="rounded" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRs3x6W1FYxlfQIqNyQweqq3tYm3NpiMiP1mXEPPfy6qJgfqoe0IdnH3d0Vm40LU_Wx9MOh3Qi4UzwG/pubhtml"></iframe>
+          </div>
+      </div>
+  </div>
+  
+  </div> 
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
