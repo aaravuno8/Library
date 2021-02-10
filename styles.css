@@ -80,6 +80,12 @@ body {
 }
 
 @media (max-width: 699px) {
+  #story-phone {
+    display: initial;
+  }
+  #story-laptop {
+    display: none;
+  }
   #carouselExampleDark img {
     width: 100px;
     height: auto;
